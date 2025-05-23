@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>HYDERABADI TECHNICIAN</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-tools logo-icon"></i>
+            <span>HYDERABADI<br>TECHNICIAN</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <button id="theme-toggle" class="toggle-button" aria-label="Toggle theme">
+                <span class="toggle-track">
+                    <span class="toggle-thumb"></span>
+                </span>
+                <span class="toggle-icons">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Professional Laptop & Desktop Repair Services at your doorstep</h1>
+                <p class="tagline">Expert doorstep service for all your computer repair needs. Fast, reliable, and professional solutions.</p>
+                <p class="location-tag">Serving All Areas of Hyderabad</p>
+                <div class="service-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Doorstep Service</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Same Day Service</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Genuine Parts</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button onclick="openBookingModal()" class="cta-button primary">Book a Technician</button>
+                    <div class="contact-buttons">
+                        <a href="tel:+919021968898" class="cta-button secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919021968898" target="_blank" class="cta-button whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop fa-2x"></i>
+                    <h3>Laptop Screen Replacement</h3>
+                    <p>Professional replacement for broken, blank, or damaged laptop screens. All brands supported.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-keyboard fa-2x"></i>
+                    <h3>Keyboard & Touchpad Replacement</h3>
+                    <p>Expert replacement of damaged keyboards and touchpads with genuine parts.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microchip fa-2x"></i>
+                    <h3>RAM / SSD / HDD Upgrade</h3>
+                    <p>Memory upgrades, SSD installations, and hard drive replacements for better performance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-server fa-2x"></i>
+                    <h3>Motherboard Repair</h3>
+                    <p>Professional motherboard repair and replacement services for all laptop models.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs fa-2x"></i>
+                    <h3>Laptop Hinge & Body Repair</h3>
+                    <p>Fix broken hinges and body damage to restore your laptop's structural integrity.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-battery-full fa-2x"></i>
+                    <h3>Battery & Charger Replacement</h3>
+                    <p>Replace faulty batteries and chargers with genuine parts for reliable power supply.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-desktop fa-2x"></i>
+                    <h3>CPU & Cabinet Servicing</h3>
+                    <p>Complete desktop computer servicing, cleaning, and maintenance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-plug fa-2x"></i>
+                    <h3>Power Supply & Cable Fixes</h3>
+                    <p>SMPS repair, replacement, and internal cable fixes for optimal power delivery.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-windows fa-2x"></i>
+                    <h3>Operating System Installation</h3>
+                    <p>Professional installation of Windows and Linux operating systems with proper configuration.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database fa-2x"></i>
+                    <h3>OS Reinstallation with Backup</h3>
+                    <p>Safe OS reinstallation with complete data backup and restoration services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-sync fa-2x"></i>
+                    <h3>Driver Installation & Updates</h3>
+                    <p>Installation and updating of all necessary device drivers for optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h3>Antivirus & Malware Removal</h3>
+                    <p>Installation of antivirus software and complete malware removal services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-alt fa-2x"></i>
+                    <h3>Software Installation</h3>
+                    <p>Installation of MS Office, Tally, and other business/utility software.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                    <h3>System Optimization</h3>
+                    <p>Complete system formatting and performance optimization for better speed and efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of certified technicians with years of experience in computer repair and maintenance. Our mission is to provide reliable and professional doorstep service for all your computer-related issues.</p>
+        </section>
+
+        <section id="tech-tips" class="tech-tips-section">
+            <h2>Tech Tips & Maintenance Guide</h2>
+            <div class="tips-grid">
+                <article class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Essential Laptop Maintenance Tips</h3>
+                    <ul class="tip-list">
+                        <li>Keep your laptop clean and dust-free</li>
+                        <li>Regularly update your operating system</li>
+                        <li>Use a cooling pad for better ventilation</li>
+                        <li>Backup your data regularly</li>
+                        <li>Keep your laptop on a flat surface</li>
+                    </ul>
+                </article>
+
+                <article class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Common PC Issues to Avoid</h3>
+                    <ul class="tip-list">
+                        <li>Overheating due to blocked vents</li>
+                        <li>Battery damage from improper charging</li>
+                        <li>Data loss from not backing up</li>
+                        <li>Performance issues from too many startup programs</li>
+                        <li>Security risks from outdated software</li>
+                    </ul>
+                </article>
+
+                <article class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3>Smart Upgrade Guide</h3>
+                    <ul class="tip-list">
+                        <li>When to upgrade RAM vs SSD</li>
+                        <li>Choosing the right battery replacement</li>
+                        <li>Selecting compatible hardware upgrades</li>
+                        <li>Understanding upgrade costs vs benefits</li>
+                        <li>Professional vs DIY upgrades</li>
+                    </ul>
+                </article>
+
+                <article class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>DIY Maintenance Guide</h3>
+                    <ul class="tip-list">
+                        <li>Safe cleaning procedures</li>
+                        <li>Basic troubleshooting steps</li>
+                        <li>When to call a professional</li>
+                        <li>Essential tools for maintenance</li>
+                        <li>Preventive care checklist</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="why-choose-us-section">
+            <h2>Why Choose Us</h2>
+            <div class="highlights-grid">
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Certified Technicians</h3>
+                    <p>Our team consists of highly qualified and certified professionals with extensive experience in computer repairs.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3>Doorstep Service</h3>
+                    <p>We come to your location, saving you time and hassle. No need to carry your device anywhere.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Same-Day Repairs</h3>
+                    <p>Most repairs completed on the same day. Quick turnaround time for your convenience.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Genuine Parts</h3>
+                    <p>We use only original and high-quality parts for all repairs and replacements.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>₹150 Doorstep Service</h3>
+                    <p>Affordable doorstep service charge. Transparent pricing with no hidden costs.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>4.9/5 Google Rating</h3>
+                    <p>Trusted by thousands of satisfied customers across Hyderabad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Rahul Kumar</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Excellent doorstep service! Fixed my laptop screen quickly and professionally. Highly recommended!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Very professional service. They came on time and fixed my desktop issues at a reasonable price."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Mohammed Ali</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great experience with their service. They upgraded my laptop's RAM and it's working much faster now."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Anjali Patel</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Amazing service! They fixed my laptop's motherboard issue at my home. Very knowledgeable and professional team."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Rajesh Singh</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Best computer repair service in Hyderabad! They installed Windows and all necessary software on my new PC. Very satisfied!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h4>Fatima Khan</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Excellent virus removal service! They not only fixed my laptop but also explained how to prevent future infections. Very helpful!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hyderbaditechnician.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 9021968898</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Paramount Hills, Tolichwoki, Hyderabad</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sat: 9AM - 6PM</p>
+                </div>
+                <div class="contact-item whatsapp-button">
+                    <a href="https://wa.me/919021968898?text=Hi%2C%20I%20need%20help%20with%20my%20laptop" target="_blank" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Us</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Modal -->
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeBookingModal()">&times;</span>
+                <h2>Book a Technician</h2>
+                <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address / Location</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deviceType">Device Type & Brand</label>
+                        <input type="text" id="deviceType" name="deviceType" placeholder="e.g., Dell Laptop, Assembled PC" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issue">Issue Description</label>
+                        <textarea id="issue" name="issue" placeholder="e.g., Not turning on, Screen broken, OS issue" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time</label>
+                        <input type="time" id="preferredTime" name="preferredTime" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Booking</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HYDERABADI TECHNICIAN. All rights reserved.</p>
+    </footer>
+
+    <a href="tel:+919021968898" class="floating-call-button">
+        <i class="fas fa-phone"></i>
+        <span>Call Now</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
